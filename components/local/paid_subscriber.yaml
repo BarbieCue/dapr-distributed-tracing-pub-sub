@@ -1,0 +1,13 @@
+apiVersion: dapr.io/v2alpha1
+kind: Subscription
+metadata:
+  name: pub-sub
+spec:
+  topic: paid
+  routes:
+    default: /paid
+  pubsubname: pub-sub
+scopes:
+  - stock-service
+  - email-service
+  - sms-service
