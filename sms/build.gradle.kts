@@ -4,7 +4,7 @@ plugins {
 }
 
 application {
-    mainClass.set("com.example.SmsKt")
+    mainClass.set("org.example.SmsKt")
 }
 
 ktor {

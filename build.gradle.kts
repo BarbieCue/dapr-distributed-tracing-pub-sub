@@ -4,7 +4,7 @@ plugins {
 }
 
 application {
-    mainClass.set("com.example.ApplicationKt")
+    mainClass.set("org.example.ApplicationKt")
 }
 
 

@@ -4,7 +4,7 @@ plugins {
 }
 
 application {
-    mainClass.set("com.example.StockKt")
+    mainClass.set("org.example.StockKt")
 }
 
 ktor {

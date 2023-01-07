@@ -4,7 +4,7 @@ plugins {
 }
 
 application {
-    mainClass.set("com.example.EmailKt")
+    mainClass.set("org.example.EmailKt")
 }
 
 ktor {

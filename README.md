@@ -62,11 +62,11 @@ which is explicitly configured to do distributed tracing using the `tracing-conf
 ### 2. Run each service alongside a dapr sidecar
 
 ```shell
-dapr run --app-id payment-service --app-port 8080 --app-protocol http --dapr-http-port 3500 --components-path components/local --config tracing-config.yaml -- java -cp payment/build/libs/fat.jar com.example.PaymentKt
-dapr run --app-id email-service --app-port 8081 --app-protocol http --dapr-http-port 3501 --components-path components/local --config tracing-config.yaml -- java -cp email/build/libs/fat.jar com.example.EmailKt
-dapr run --app-id sms-service --app-port 8082 --app-protocol http --dapr-http-port 3502 --components-path components/local --config tracing-config.yaml -- java -cp sms/build/libs/fat.jar com.example.SmsKt
-dapr run --app-id shipping-service --app-port 8083 --app-protocol http --dapr-http-port 3503 --components-path components/local --config tracing-config.yaml -- java -cp shipping/build/libs/fat.jar com.example.ShippingKt
-dapr run --app-id stock-service --app-port 8084 --app-protocol http --dapr-http-port 3504 --components-path components/local --config tracing-config.yaml -- java -cp stock/build/libs/fat.jar com.example.StockKt
+dapr run --app-id payment-service --app-port 8080 --app-protocol http --dapr-http-port 3500 --components-path components/local --config tracing-config.yaml -- java -cp payment/build/libs/fat.jar org.example.PaymentKt
+dapr run --app-id email-service --app-port 8081 --app-protocol http --dapr-http-port 3501 --components-path components/local --config tracing-config.yaml -- java -cp email/build/libs/fat.jar org.example.EmailKt
+dapr run --app-id sms-service --app-port 8082 --app-protocol http --dapr-http-port 3502 --components-path components/local --config tracing-config.yaml -- java -cp sms/build/libs/fat.jar org.example.SmsKt
+dapr run --app-id shipping-service --app-port 8083 --app-protocol http --dapr-http-port 3503 --components-path components/local --config tracing-config.yaml -- java -cp shipping/build/libs/fat.jar org.example.ShippingKt
+dapr run --app-id stock-service --app-port 8084 --app-protocol http --dapr-http-port 3504 --components-path components/local --config tracing-config.yaml -- java -cp stock/build/libs/fat.jar org.example.StockKt
 ```
 
 As you can see, the dapr CLI is used to start up both, the dapr sidecar and the service.

@@ -1,4 +1,4 @@
-package com.example
+package org.example
 
 import io.ktor.client.*
 import io.ktor.client.engine.cio.*

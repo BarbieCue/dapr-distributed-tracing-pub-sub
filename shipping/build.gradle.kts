@@ -4,7 +4,7 @@ plugins {
 }
 
 application {
-    mainClass.set("com.example.ShippingKt")
+    mainClass.set("org.example.ShippingKt")
 }
 
 ktor {
