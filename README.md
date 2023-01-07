@@ -53,6 +53,7 @@ which is explicitly configured to do distributed tracing using the `tracing-conf
 
 ## Get started
 
+
 ### 1. Build all services
 
 ```shell
@@ -76,6 +77,8 @@ As you can see, the dapr CLI is used to start up both, the dapr sidecar and the 
 ```shell
 curl -X POST http://localhost:8080/pay
 ```
+
+![scenario](docs/jaeger_trace.jpg)
 
 
 ### 4. View the traces in Jaeger UI
