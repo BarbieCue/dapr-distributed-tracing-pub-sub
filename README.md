@@ -78,11 +78,12 @@ As you can see, the dapr CLI is used to start up both, the dapr sidecar and the 
 curl -X POST http://localhost:8080/pay
 ```
 
-![scenario](docs/jaeger_trace.jpg)
-
 
 ### 4. View the traces in Jaeger UI
 Visit http://localhost:16686/
+
+![scenario](docs/jaeger_trace.jpg)
+
 
 # References
 - [dapr concepts](https://docs.dapr.io/concepts/)
