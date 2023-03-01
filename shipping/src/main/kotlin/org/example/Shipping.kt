@@ -25,7 +25,7 @@ fun main() {
 }
 
 fun Application.module() {
-    this@module.routing {
+    routing {
 
         post("/onstock") {
             val client = HttpClient(CIO){

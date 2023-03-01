@@ -23,7 +23,7 @@ fun main() {
 }
 
 fun Application.module() {
-    this@module.routing {
+    routing {
 
         post("/pay") {
             val client = HttpClient(CIO){

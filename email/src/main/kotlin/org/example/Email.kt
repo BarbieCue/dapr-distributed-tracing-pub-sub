@@ -15,7 +15,7 @@ fun main() {
 }
 
 fun Application.module() {
-    this@module.routing {
+    routing {
 
         post("/paid") {
             println("Received message:\n${call.receiveText()}")
